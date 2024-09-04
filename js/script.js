@@ -44,8 +44,24 @@ function updateTotalPrice(product)
         const total = quantity * price;
 
         totalElement.value = total;
-    
+        checkoutTotalPrice('coffee', 'espresso', 'latte');
     }
+}
+
+function checkoutTotalPrice(productA, productB, productC)
+{
+    const totalPriceProductA = document.getElementById(productA + '-total');
+    const totalPriceProductB = document.getElementById(productB + '-total');
+    const totalPriceProductC = document.getElementById(productC + '-total');
+
+    const totalPriceA = parseInt(totalPriceProductA.value); // henter total prisen til ProductA
+    const totalPriceB = parseInt(totalPriceProductB.value); // henter total prisen til ProductB
+    const totalPriceC = parseInt(totalPriceProductC.value); // henter total prisen til ProductC
+
+    const totalSum = totalPriceA + totalPriceB + totalPriceC;
+    //console.log(totalSum);
+    //alert(totalSum);  
+    document.getElementById('totalSum').value = totalSum;                                    
 }
 
 
