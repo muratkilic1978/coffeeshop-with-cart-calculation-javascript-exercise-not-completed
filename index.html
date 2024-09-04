@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics 01</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script01.js" defer></script> <!-- Link to the external JavaScript file -->
+</head>
+<body>
+
+<main>
+    <!-- Black Coffee Section -->
+    <section>
+        <h3>Black Coffee</h3>
+        <aside>
+            <input type="number" name="black-coffee" id="black-coffee" value="0" disabled>
+        </aside>
+        <aside><button onclick="addToCart('black-coffee');">Add to Cart</button></aside>
+        <aside><button onclick="removeFromCart('black-coffee');">Remove from Cart</button></aside>
+        <aside><button onclick="increaseQuantity('black-coffee', 2);">+2</button></aside>
+        <aside><button onclick="increaseQuantity('black-coffee', 3);">+3</button></aside>
+        <aside><button onclick="resetCart('black-coffee');">Reset Cart</button></aside>
+    </section>
+    <!-- Espresso Section -->
+    <section>
+        <h3>Espresso</h3>
+        <aside>
+            <input type="number" name="espresso" id="espresso" value="0" disabled>
+        </aside>
+        <aside><button onclick="addToCart('espresso');">Add to Cart</button></aside>
+        <aside><button onclick="removeFromCart('espresso');">Remove from Cart</button></aside>
+        <aside><button onclick="increaseQuantity('espresso', 2);">+2</button></aside>
+        <aside><button onclick="increaseQuantity('espresso', 3);">+3</button></aside>
+        <aside><button onclick="resetCart('espresso');">Reset Cart</button></aside>
+    </section>
+    <!-- Latte Section -->
+    <section>
+        <h3>Latte</h3>
+        <aside>
+            <input type="number" name="latte" id="latte" value="0" disabled>
+        </aside>
+        <aside><button onclick="addToCart('latte');">Add to Cart</button></aside>
+        <aside><button onclick="removeFromCart('latte');">Remove from Cart</button></aside>
+        <aside><button onclick="increaseQuantity('latte', 2);">+2</button></aside>
+        <aside><button onclick="increaseQuantity('latte', 3);">+3</button></aside>
+        <aside><button onclick="resetCart('latte');">Reset Cart</button></aside>
+    </section>
+</main>
+</body>
+</html>
